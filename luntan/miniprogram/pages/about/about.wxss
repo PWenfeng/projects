@@ -1,0 +1,15 @@
+/* pages/about/about.wxss */
+.container{
+  text-align: center;
+  width: 648rpx;
+  margin: 0 auto;
+}
+.pic-icon{
+  height:128rpx;
+  margin-top: 120rpx;
+}
+.footer{
+  position: fixed;
+  bottom: 0;
+  width: 648rpx;
+}

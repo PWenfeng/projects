@@ -1,0 +1,5 @@
+<!--pages/account/account.wxml-->
+<view class="container">
+  <view class="title">账户余额</view>
+  <view class="balance">{{balance}}</view>
+</view>

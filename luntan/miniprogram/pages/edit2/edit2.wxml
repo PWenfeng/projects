@@ -1,0 +1,32 @@
+<view>
+  <view class="publish">
+		<view class="left" bindtap="back">
+			<mp-icon icon="back" size="{{12}}"></mp-icon>
+		</view>
+		<view class="right" bindtap="publish" bindtap="publish">发表</view>
+	</view>
+
+	<view class="uploadImg">
+		<image src="{{img}}" style="height:360rpx"></image>
+	</view>
+
+	<view>
+		<button class="addImg" block bindtap="upload" style="width:750rpx">上传图片</button>
+	</view>
+	<view>
+	</view>
+	<view class="section section_gap">		
+		<checkbox-group class="group" bindchange="checkboxChange">
+		<view class="tags">选择标签：</view>
+			<view class="label-1" wx:for="{{checkboxItems}}" wx:key="item">			
+				<label>
+					<checkbox hidden value="{{item.name}}" checked="{{item.checked}}"></checkbox>
+					<view class="label-1__icon">
+						<view class="label-1__icon-checked" style="opacity:{{item.checked ? 1: 0}}"></view>
+					</view>
+					<text class="label-1__text">{{item.value}}</text>
+				</label>
+			</view>
+		</checkbox-group>
+	</view>
+</view>

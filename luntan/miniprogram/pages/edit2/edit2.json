@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "uploader": "../../components/uploader/uploader",
+    "mp-icon": "../../components/icon/icon"
+  },
+  "navigationBarTitleText": "上传图片"
+}

@@ -1,0 +1,8 @@
+/* pages/edit3/edit3.wxss */
+.sign{
+  width: 750rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  border:1px solid #f0f0f0;
+  box-sizing: border-box;
+}

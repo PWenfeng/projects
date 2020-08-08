@@ -1,0 +1,10 @@
+<!--pages/about/about.wxml-->
+<view class="container">
+  <image src="../../images/论坛.svg" class="pic-icon"></image>
+  <view>微论坛</view>
+  <view>v1.1.0 Build.1012</view>  
+  <view>微论坛是一个综合内容的社区，用户能够分享图片，文字和视频，让不同的人都能发现自己感兴趣的内容。</view>
+  <view>电子邮箱：weiluntan.com</view>
+  <view>商务微信：weiluntan</view>
+  <view class="footer">Copyright 2020 weiluntan.io</view>
+</view>

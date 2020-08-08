@@ -1,0 +1,70 @@
+<view class="container">
+	<view>
+		<image src="../../images/member-banner.png"  class="img"></image>
+		<navigator url="../question/question">
+			<view class="question">常见问题 ></view>
+		</navigator>
+	</view>
+	<view class="member-order-list">
+		<view class="userInfo">
+			<view class="order-left">
+				<image src="{{userList.avatarUrl}}" class="order-img"></image>
+			</view>
+			<view class="order-right">
+				<view class="username">{{userList.nickName}}</view>
+				<view class="right-title">开通会员享受专属特权</view>
+			</view>
+		</view>
+		<view class="order-money">
+			<view class="tag">按年订阅</view>
+			<view class="money">￥365/年</view>
+			<view class="desc">每日低至一元</view>
+		</view>
+		<view class="pay">成为微会员</view>
+	</view>
+	<view>
+		<mp-cell>
+			<view slot="title" style="position: relative;margin-right: 10px;">
+				<image src="../../images/会员权益图标/fufeizhongxin.svg" class="mp-cell_img" />
+			</view>
+			<view>付费内容免费读</view>
+			<view style="font-size: 13px;color: #888888;">会员有效期内，微论坛付费内容均可免费阅读</view>
+		</mp-cell>
+		<mp-cell>
+			<view slot="title" style="position: relative;margin-right: 10px;">
+				<image src="../../images/会员权益图标/discount.svg" class="mp-cell_img" />
+			</view>
+			<view>会员折扣</view>
+			<view style="font-size: 13px;color: #888888;">成为会员付费内容7折优惠</view>
+		</mp-cell>
+		<mp-cell>
+			<view slot="title" style="position: relative;margin-right: 10px;">
+				<image src="../../images/会员权益图标/fufeizhongxin.svg" class="mp-cell_img" />
+			</view>
+			<view>会员标识</view>
+			<view style="font-size: 13px;color: #888888;">会员拥有专属身份标识</view>
+		</mp-cell>
+		<mp-cell>
+			<view slot="title" style="position: relative;margin-right: 10px;">
+				<image src="../../images/会员权益图标/tuijian.svg" class="mp-cell_img" />
+			</view>
+			<view>内容推荐</view>
+			<view style="font-size: 13px;color: #888888;">会员获得内容优先推荐权</view>
+		</mp-cell>
+		<mp-cell>
+			<view slot="title" style="position: relative;margin-right: 10px;">
+				<image src="../../images/会员权益图标/kefu.svg" class="mp-cell_img" />
+			</view>
+			<view>专属客服</view>
+			<view style="font-size: 13px;color: #888888;">成为会员能获得更好的会员服务</view>
+		</mp-cell>
+		<mp-cell>
+			<view slot="title" style="position: relative;margin-right: 10px;">
+				<image src="../../images/会员权益图标/icon-test.svg" class="mp-cell_img" />
+			</view>
+			<view>去除广告</view>
+			<view style="font-size: 13px;color: #888888;">会员没有广告，获得更流畅体验</view>
+		</mp-cell>
+	</view>
+	<view class="footer">更多会员权益更新中~</view>
+</view>

@@ -1,0 +1,2 @@
+<!--pages/custser/custser.wxml-->
+<button open-type="contact" class="custser">进入客服</button>

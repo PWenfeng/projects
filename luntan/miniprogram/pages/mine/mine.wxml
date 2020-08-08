@@ -1,0 +1,79 @@
+<view class="container">
+	<view class="userInfo">
+		<image src="{{userList.avatarUrl}}" class="img"></image>
+		<view class="name">{{userList.nickName}}</view>
+		<view class="edit">{{userList.sign}}
+			<mp-icon icon="pencil" color="black" size="{{25}}" bindtap="toEdit3"></mp-icon>
+		</view>
+  </view>
+	<view>
+		<navigator url="../account/account">
+		<view class="cell">
+			<view class="cell-img">
+				<image src="../../images/zhanghu.svg" class="cell-icon"></image>
+			</view>
+			<view class="cell-title">
+				<view class="title-left">账户</view>
+				<view class="title-right">
+					<mp-icon type="field" icon="arrow" color="#434343" size="{{16}}"></mp-icon>
+				</view>
+			</view>
+		</view>
+	</navigator>
+	<navigator url="../dingyue2/dingyue2">
+		<view class="cell">
+			<view class="cell-img">
+				<image src="../../images/dingyue.svg" class="cell-icon"></image>
+			</view>
+			<view class="cell-title">
+				<view class="title-left">已订阅</view>
+				<view class="title-right">
+					<mp-icon type="field" icon="arrow" color="#434343" size="{{16}}"></mp-icon>
+				</view>
+			</view>
+		</view>
+	</navigator>
+	<navigator url="../history/history">
+		<view class="cell">
+			<view class="cell-img">
+				<image src="../../images/lishijilu.svg" class="cell-icon"></image>
+			</view>
+			<view class="cell-title">
+				<view class="title-left">历史记录</view>
+				<view class="title-right">
+					<mp-icon type="field" icon="arrow" color="#434343" size="{{16}}"></mp-icon>
+				</view>
+			</view>
+		</view>
+	</navigator>
+	<navigator url="../custser/custser">
+		<view class="cell">		
+			<view class="cell-img">
+				<image src="../../images/kefu.svg" class="cell-icon"></image>
+			</view>
+			<view class="cell-title" capture-bind:touchstart="click">
+				<view class="title-left" >客服</view>
+				<view class="title-right">
+					<mp-icon type="field" icon="arrow" color="#434343" size="{{16}}"></mp-icon>
+				</view>
+			</view>
+		</view>
+	</navigator>		
+	<navigator url="../about/about">
+		<view class="cell">
+			<view class="cell-img">
+				<image src="../../images/guanyu.svg" class="cell-icon"></image>
+			</view>
+			<view class="cell-title">
+				<view class="title-left">关于</view>
+				<view class="title-right">
+					<mp-icon type="field" icon="arrow" color="#434343" size="{{16}}"></mp-icon>
+				</view>
+			</view>
+		</view>
+	</navigator>
+	</view>
+	
+	
+</view>
+<mp-halfScreenDialog bindbuttontap="buttontap" show="{{show}}" maskClosable="{{false}}" title="微论坛 申请" desc="获取你的昵称、头像、地区和性别" buttons="{{buttons}}"></mp-halfScreenDialog>

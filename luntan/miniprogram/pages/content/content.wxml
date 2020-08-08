@@ -1,0 +1,10 @@
+<!--pages/content/content.wxml-->
+<view class="container">
+    <view class="title">{{content.title}}</view>
+    <view class="state">
+      <view class="time">{{time}}</view>
+      <view class="hot">热度:{{content.count}}</view>
+    </view>    
+    <image src="{{content.img}}" style="width:100%"></image>
+    <view class="content">{{content.content}}</view>
+</view>

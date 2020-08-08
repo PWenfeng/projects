@@ -1,0 +1,109 @@
+.img{
+  width: 750rpx;
+  height: 375rpx;
+}
+.question{
+  background-color: #434343;
+  display: inline;
+  position: absolute;
+  right: 0;
+  top: 64rpx;
+  padding:10rpx 15rpx;
+  border-radius: 24rpx 0 0 24rpx;
+  font-size: 24rpx;
+  font-weight: 600;
+  color: #bfbfbf;
+}
+.member-order-list{
+  width: 700rpx;
+  height:548rpx;
+  border-radius: 8rpx;
+  position: relative;
+  left:25rpx;
+  background-color: rgb(255, 255, 255);  
+}
+.userInfo{
+  height: 160rpx;
+  /* background-color: rgb(126, 126, 155); */
+  width: 100%;
+  padding: 32rpx 0;
+  box-sizing: border-box;
+  margin-bottom: 36rpx;
+}
+.order-img{
+  width: 80rpx;
+  height: 80rpx;  
+  border-radius: 50%;
+  border: 3rpx solid orange;
+}
+.order-left{
+  display: inline-block;
+  width: 100rpx;
+  margin-left: 35rpx;
+}
+.order-right{
+  display: inline-block;
+  width: 480rpx;
+  height: 120rpx;
+  position: absolute;
+}
+.username{
+  line-height: 42rpx;
+  height: 42rpx;
+}
+.order-money{
+  width: 640rpx;
+  height: 180rpx;
+  background-color: rgb(255, 220, 160);
+  border:2rpx solid orange;
+  box-sizing: border-box;
+  border-radius: 6rpx;
+  margin:0 auto;
+}
+.tag{
+  position: relative;
+  top: -30rpx;
+  left: 20rpx;
+  background-color: orange;
+  color: rgb(22, 20, 20);
+  border-radius: 6rpx;
+  width: 120rpx;
+  padding:6rpx;
+  font-size: 28rpx;
+  text-align: center;
+  font-weight: 600;
+}
+.money{
+  font-size: 46rpx;
+  margin-left: 20rpx;
+  position: relative;
+  top: -16rpx;
+}
+.desc{
+  margin-left: 20rpx;
+  color: #595959;
+  position: relative;
+  top: -10rpx;
+}
+.pay{
+  width: 640rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+  background-color: rgb(12, 12, 12);
+  border-radius: 6rpx;
+  color: gold;
+  text-align: center;
+  font-weight: 600;
+  margin: 36rpx auto ;
+}
+.footer{
+  text-align: center;
+  font-weight: 600;
+  font-size: 24rpx;
+  color: orange;
+  height: 80rpx;
+  line-height: 80rpx;
+}
+.mp-cell_img{
+  width: 36px; height: 36px; display: block;
+}

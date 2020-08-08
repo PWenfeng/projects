@@ -1,0 +1,72 @@
+.container{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.userInfo{
+  text-align: center;
+}
+
+.img{
+  border-radius: 50%;
+  width:160rpx;
+  height:160rpx;
+  margin-top: 36rpx;
+}
+.name{
+  font-weight: 600;
+  margin: 10rpx 0;
+}
+.edit{
+  width: 725rpx;
+  height: 64rpx;
+  line-height: 64rpx;
+  color: rgb(169, 168, 168);
+  margin-bottom: 30rpx;
+  box-sizing: border-box;
+}
+.cell{
+  height: 120rpx;
+  width: 730rpx;
+  display: flex;
+  border-top: 1px solid #f0f0f0; 
+  background-color: #fafafa; 
+}
+.cell-icon{
+  width: 60rpx;
+  height:60rpx;
+  border-radius: 6rpx;
+}
+.cell-img{
+  margin: auto 20rpx;
+}
+.cell-title{
+  width: 650rpx;
+  line-height: 120rpx;
+}
+.title-left{
+  float:left;
+}
+.title-right{
+  float:right;
+  margin-right: 28rpx;
+}
+
+.page-section{
+  width: 60%;
+  height: 24rpx;
+  margin: 0 auto;
+}
+
+.page-section:last-child{
+  margin-bottom: 0;
+}
+
+.page-section-title{
+  font-size: 28rpx;
+  color: #999999;
+  margin-bottom: 10rpx;
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+}
+

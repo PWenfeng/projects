@@ -1,0 +1,45 @@
+<view>
+	<view class="header">
+		<view type="text" class="icon-search">
+			<navigator url="../search/search">
+				<mp-icon icon="search" color="black" size="{{28}}" />
+			</navigator>
+		</view>
+		<view class="icon-add" bindtap="navigatorTo">
+			<mp-icon icon="add2" color="black" size="{{25}}" />
+		</view>
+	</view>
+
+	<swiper indicator-dots="true" indicator-active-color="#333333" autoplay="true" interval="3500" circular="true">
+		<block wx:for="{{bannerImg}}" wx:key="item">
+			<navigator url="../content/content?id={{item._id}}">
+				<swiper-item>
+					<image src="{{item.img}}" mode="aspectFit" class="side-image" lazy-load="true"></image>
+				</swiper-item>
+			</navigator>
+		</block>
+	</swiper>
+
+	<view class="content">
+		<view class="message-title">
+			<block wx:for="{{tabs}}" wx:key="id">
+				<view class="tabs-titles {{seletId==index?'tabs-titles-active':''}} " bindtap="choose" data-index="{{index}}">
+					{{item.value}}
+				</view>
+			</block>
+		</view>
+		<view wx:for="{{tabsContent.data}}" wx:key="item" class="message-content">
+			<view class="weui-panel weui-panel_access">
+				<navigator url="../content/content?id={{item._id}}" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
+					<view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+						<image class="weui-media-box__thumb" src="{{item.img}}" />
+					</view>
+					<view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+						<view class="weui-media-box__title">{{item.title}}</view>
+						<view class="weui-media-box__desc">{{item.content}}</view>
+					</view>
+				</navigator>
+			</view>
+		</view>
+	</view>
+</view>

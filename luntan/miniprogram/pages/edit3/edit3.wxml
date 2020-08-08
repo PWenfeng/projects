@@ -1,0 +1,1 @@
+<textarea auto-focus="true" bindblur="bindTextAreaBlur" class="sign"></textarea>

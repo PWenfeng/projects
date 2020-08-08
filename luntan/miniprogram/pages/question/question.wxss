@@ -1,0 +1,20 @@
+/* pages/question/question.wxss */
+.container{
+  width: 700rpx;
+  padding:30rpx;
+}
+.h1{
+  font-size: 36rpx;
+  font-weight: 600;
+  margin:10rpx 0;
+}
+.h2{
+  font-size: 30rpx;
+  font-weight: 600;
+  margin:10rpx 0;
+}
+.h3{
+  font-size: 30rpx;
+  margin:10rpx 0;
+  text-indent: 8rpx;
+}

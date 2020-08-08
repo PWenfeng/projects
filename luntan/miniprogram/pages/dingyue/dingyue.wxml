@@ -1,0 +1,21 @@
+<view class="page">
+    <view class="page__bd">
+        <view class="weui-panel weui-panel_access">
+            <view class="weui-panel__bd">
+            <block wx:for="{{goods}}" wx:key="_id" wx:for-index='key' wx:for-item="item">
+              <view class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active" style="height:160rpx" bindtap="toDetail" id="{{item._id}}">
+                    <view class="weui-media-box__hd weui-media-box__hd_in-appmsg" style="height:148rpx">
+                        <image class="weui-media-box__thumb" src="{{item.img}}" />
+                    </view>
+                    <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+                        <view class="weui-media-box__title">{{item.title}}</view>
+                        <view class="weui-media-box__desc" style="-webkit-line-clamp:1">{{item.desc}}</view>
+                        <view class="price">{{item.price}}元</view>
+                    </view>
+                </view>
+            </block>                
+            </view>
+        </view>
+    </view>
+</view>
+

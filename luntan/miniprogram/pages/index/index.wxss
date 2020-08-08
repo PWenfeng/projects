@@ -1,0 +1,57 @@
+@import '../../style/common.wxss';
+.header{
+  background-color: #fafafa;
+  display: flex
+}
+.icon-search{
+  background-color: rgb(255, 255, 255);
+  width:624rpx;
+  height:72rpx;
+  text-align: center;
+  border-radius: 8rpx;
+  line-height: 72rpx;
+  margin:20rpx 40rpx;
+}
+.icon-add{
+  margin: auto 48rpx auto 0;  
+}
+.side-image{
+  width: 750rpx;
+  height:375rpx;
+}
+.tabs-titles{
+  margin: 30rpx 20rpx 0 20rpx;
+  font-size: 20px;
+  font-weight: 500;
+  box-sizing: border-box;
+  display: inline-block;
+  box-sizing: border-box;
+  color: #8c8c8c;
+}
+.tabs-titles-active{
+  color: #000000;
+}
+.tabs{
+  width: 750rpx;
+}
+
+/* tabs滚动条 */
+.page-section-spacing{
+  margin-top: 60rpx;
+}
+.scroll-view_H{
+  white-space: nowrap;
+}
+.scroll-view-item{
+  height: 300rpx;
+}
+.scroll-view-item_H{
+  display: inline-block;
+  width: 100%;
+  height: 300rpx;
+}
+
+
+
+
+
