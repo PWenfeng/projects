@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "windowHeader":"../../components/windowHeader/windowHeader",
+    "van-icon": "@vant/weapp/icon/index"
+  }
+}

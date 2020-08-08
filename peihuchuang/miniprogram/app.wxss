@@ -1,0 +1,7 @@
+@import "colorui/main.wxss";
+@import "colorui/icon.wxss";
+view{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}

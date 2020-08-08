@@ -1,0 +1,67 @@
+page{
+  height: 100%;
+}
+.shouquanbg{
+  background: rgba(255,255,255,.5);
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.shouquanbox{
+  /* border:1px solid red; */
+  width:500rpx;
+  background: #fff;
+  box-shadow: -2px 0px 5px 1px #f1f1f1,0px -2px 5px 1px #f1f1f1,2px 0px 5px 1px #f1f1f1,0px 2px 5px 1px #f1f1f1;
+  padding:40rpx;
+  box-sizing: border-box;
+}
+.header {
+    border-bottom: 1px solid #f2f2f2;
+    text-align: center; 
+}
+.header image {
+    width: 120rpx;
+    height: 120rpx;
+    border-radius: 50%;
+}
+.header >view{
+font-size: 30rpx;
+margin:18rpx;
+margin-top:0px;
+}
+.quanti{
+  font-size: 28rpx;
+  padding:20rpx 0
+}
+.content{
+  color:#999;
+  font-size: 26rpx;
+}
+.content>view{
+  padding:4rpx 0;
+}
+ 
+.bottom {
+    border-radius: 10rpx;
+    font-size: 30rpx;
+    margin-top:30rpx;
+}
+
+button[type=primary]{
+  background: #39b54a;
+}
+.button-hover{
+  background: #8dc63f !important;
+}
+/* 微信版本低样式 */
+.shengjiwx{
+  text-align: center;
+  min-height:200px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #999;
+  font-size: 32rpx;
+  line-height: 50rpx;
+  }

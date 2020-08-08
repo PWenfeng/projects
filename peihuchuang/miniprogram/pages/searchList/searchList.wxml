@@ -1,0 +1,16 @@
+<windowHeader></windowHeader>
+<van-icon class="backbtn" name="arrow-left" size="50rpx" custom-style=" position: absolute;top: 50rpx;left:30rpx;color:white" bind:click="back"/>
+<swiper class="screen-swiper {{DotStyle?'square-dot':'round-dot'}}" indicator-dots="true" circular="true" autoplay="true" interval="5000" duration="500">
+  <swiper-item wx:for="{{swiperList}}" wx:key>
+    <image src="{{item.url}}" mode="aspectFill" wx:if="{{item.type=='image'}}"></image>
+    <video src="{{item.url}}" autoplay loop muted show-play-btn="{{false}}" controls="{{false}}" objectFit="cover" wx:if="{{item.type=='video'}}"></video>
+  </swiper-item>
+</swiper>
+<!-- 商品列表 -->
+<view class="content">
+<view class="item" wx:for="{{shopList}}" wx:key="goods_id" bindtap="findShop" data-gid="{{item.goods_id}}">
+    <image src="{{item.goods_small_logo}}"></image>
+    <view style="color:red;font-size:30rpx">￥{{item.goods_price}}</view>
+    <view class="title">{{item.goods_name}}</view>
+</view>
+</view>

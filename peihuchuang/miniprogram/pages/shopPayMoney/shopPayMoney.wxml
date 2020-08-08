@@ -1,0 +1,32 @@
+<windowHeader></windowHeader>
+<van-icon class="backbtn" name="arrow-left" size="50rpx" custom-style=" position: absolute;top: 50rpx;left:30rpx;color:white" bind:click="back"/>
+<view class="address" bindtap="redirectAddress">
+ <view><van-icon name="location" size="50rpx" /></view>
+ <view class="content">
+ <view>收货人：{{defaultAddress.name}}</view>
+  <view> 手机号码：{{defaultAddress.tel}}</view>
+   <view> 地址：地址：{{defaultAddress.address[0]}}{{defaultAddress.address[1]}}{{defaultAddress.address[2]}}{{defaultAddress.addressDetail}}
+</view>
+ </view>
+ <view><van-icon name="arrow" size="50rpx" /></view>
+</view>
+<view class="orderContent">
+<view class="orderItems" wx:for="{{orderList}}" wx:key="index">
+  <view class="iteminfo">
+  <view>
+  <image src="{{item.shopimg}}"></image>
+  </view>
+  <view>{{item.shopname}}</view>
+  </view>
+  <view class="itemMoney">
+  小计：￥ {{item.shopprice*item.shopcount}}
+  </view>
+</view>
+</view>
+
+
+<van-submit-bar
+  price="{{ totalMoney*100 }}"
+  button-text="提交订单"
+  bind:submit="onSubmit"
+/>

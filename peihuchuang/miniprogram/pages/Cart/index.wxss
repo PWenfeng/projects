@@ -1,0 +1,60 @@
+.cartsItems{
+  margin-bottom: 100rpx;
+}
+.item{
+  margin: 10rpx auto ;
+  padding-top: 20rpx;
+   width: 90vw;
+   border: 1px solid silver;
+   height: 300rpx;
+   background-color: white;
+   border-radius: 30rpx;
+   display: flex;
+   flex-direction: column;
+}
+.item .itemup{
+  flex: 7;
+  display: flex;
+}
+.item .itemup .select {
+  flex: 1;
+  padding-top: 90rpx;
+  padding-left: 15rpx;
+}
+.item .itemup .img {
+  flex: 3;
+}
+.item .itemup .img image{
+  width: 200rpx;
+  height: 200rpx;
+}
+.item .itemup .name {
+  flex: 6;
+  padding-top: 30rpx;
+  text-indent: 30rpx;
+  display: -webkit-box;/*将对象作为弹性伸缩盒子模型显示*/
+  overflow: hidden; /* 超出的文本隐藏 */
+  text-overflow: ellipsis;/* 溢出用省略号显示 */
+  word-wrap: break-word;/* 文本高出宽度换行 */
+  white-space: normal !important;/* 溢出不换行 */
+  -webkit-line-clamp: 2;/* 表示显示的行数 */
+  -webkit-box-orient: vertical;/* 从上到下垂直排列子元素 */
+
+}
+.item .itemdown{
+  flex: 3;
+  display: flex;
+}
+.item .itemdown>view:nth-child(1){
+  flex: 4;
+}
+.item .itemdown>view:nth-child(2){
+  flex: 6;
+  display: flex;
+
+}
+.item .itemdown>view:nth-child(2) view{
+  flex: 1;
+  text-align: center;
+  line-height: 80rpx;
+}

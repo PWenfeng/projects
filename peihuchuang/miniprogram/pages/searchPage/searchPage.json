@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "windowHeader":"../../components/windowHeader/windowHeader",
+    "searchBox":"../../components/searchBox/searchBox",
+    "van-icon": "@vant/weapp/icon/index"
+  }
+}

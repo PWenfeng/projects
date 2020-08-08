@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "windowHeader":"../../components/windowHeader/windowHeader",
+    "van-icon": "@vant/weapp/icon/index",
+    "van-checkbox": "@vant/weapp/checkbox/index",
+  "van-checkbox-group": "@vant/weapp/checkbox-group/index"
+  }
+}

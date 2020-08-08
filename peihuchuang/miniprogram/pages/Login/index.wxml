@@ -1,0 +1,20 @@
+
+<view class='shouquanbg'>
+  <view class='shouquanbox'>
+    <view>
+      <view class='header'>
+        <image src='../../images/logo.png'></image>
+        <view>铭迈医疗器械</view>
+      </view>
+      <view class='quanti'>
+        需要您的授权才可以正常使用哦！
+      </view>
+      <view class='content'>
+        <view>· 请允许我们获得您的公开资讯</view>
+        <view>· 我们不会公开您的这些信息</view>
+        <view>· 只是为了给您提供更好的服务</view>
+      </view>
+      <button class='bottom' type='primary' open-type="getUserInfo" bindgetuserinfo='getUserInfo'>允 许</button>
+    </view>
+  </view>
+</view>

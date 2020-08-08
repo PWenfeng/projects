@@ -1,0 +1,30 @@
+/* pages/Shop/index.wxss */
+.searchBoX{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin:10rpx 20rpx;
+  background-color: white;
+  width: 100vw;
+}
+.searchBoX .searchBox_box{
+  border-radius: 40rpx;   
+  height: 80rpx;
+  width: 600rpx;
+  background-color: #CFCFCF;
+  display: flex;
+}
+.searchBoX .searchBox_box view{
+  margin-left: 20rpx;
+  margin-top: 10rpx;
+}
+.searchBoX .searchBox_box view input{
+ position: relative;
+ top: 10rpx;
+}
+.searchBoX .searchBox_btn{
+  flex: 2;
+  margin-left: 30rpx;
+  position: relative;
+  top: 20rpx;
+}

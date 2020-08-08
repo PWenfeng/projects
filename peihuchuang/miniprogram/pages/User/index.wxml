@@ -1,0 +1,22 @@
+  <view class="UCenter-bg">
+  <view wx-if="{{userInfo.nickName?true:false}}">
+    <image src="{{userInfo.avatarUrl}}" class="png" mode="widthFix"></image>
+    <view class="text-xl" style="  text-align: center;">
+      {{userInfo.nickName}}
+    </view>
+    </view>
+    <view  wx-if="{{userInfo.nickName?false:true}}"><button bindtap="getInfo">请先授权</button></view>
+    <image src="../../images/wave.gif" mode="scaleToFill" class="gif-wave"></image>
+  </view>
+  <view class="waterTest"></view>
+  <view class="content">
+      <view class="items">
+        <view wx:for="{{navList}}" wx:key="index" class="item">
+        <navigator url="{{item.navigateUrl}}">
+            <image src="{{item.lefticon}}"></image>
+            <view class="title">{{item.title}}</view>
+           <van-icon name="{{item.righticon}}" color="#778899" />
+           </navigator>
+        </view>
+      </view>
+  </view>

@@ -1,0 +1,7 @@
+<view class="searchBoX">
+  <view class="searchBox_box">
+  <view ><van-icon name="search" size="50rpx"/></view>
+  <view ><input placeholder="请输入查询内容" bindinput="infoChange"></input></view>
+  </view>
+  <view class="searchBox_btn" bindtap="searchShop">搜索</view>
+</view>

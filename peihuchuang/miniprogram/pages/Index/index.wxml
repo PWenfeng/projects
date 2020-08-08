@@ -1,0 +1,23 @@
+<windowHeader></windowHeader>
+<swiper class="screen-swiper square-dot" indicator-dots="true" circular="true" autoplay="true" interval="3000" duration="500">
+  <swiper-item wx:for="{{swiperList}}" wx:key="index">
+    <image src="{{item.url}}" mode="aspectFill"></image>
+  </swiper-item>
+</swiper>
+<view class="index_message">
+重要提示：手机请打开蓝牙定位功能，否则可能找不到设备哦
+</view>
+<view class="btn btn-zu" wx:if='{{true}}' bindtap="saoma">
+  <view>
+    <image  style="width:2.4rem" mode="widthFix" src="../../images/sysB.png"></image>
+  </view>
+  <view class="btn-title" >
+    {{btnInfo}}
+  </view>
+  <view class="useInfo" wx:if="{{btnInfo=='扫码结算'?true:false}}">
+    <view>开锁时间：{{openlockTime}}</view>
+    <view>陪护床状态：使用中</view>
+    <view>当前结算金额：{{result}}元</view>
+    <view>计费方式：5元/小时</view>
+  </view>
+</view>

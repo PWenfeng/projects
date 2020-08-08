@@ -1,0 +1,55 @@
+{
+  "pages": [
+    "pages/Index/index",
+    "pages/Shop/index",
+    "pages/User/index",
+    "pages/Login/index",
+    "pages/Cart/index",
+    "pages/Dingdan/index",
+    "pages/Address/index",
+    "pages/Userhelp/index",
+    "pages/Pinjia/index",
+    "pages/Baoxiu/index",
+    "pages/Kefu/index",
+    "pages/searchPage/searchPage",
+    "pages/searchList/searchList",
+    "pages/shopDetail/shopDetail",
+    "pages/shopPayMoney/shopPayMoney"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#39b54a",
+    "navigationBarTitleText": "铭迈科技",
+    "navigationStyle": "custom",
+    "navigationBarTextStyle": "white"
+  },
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "color": "",
+    "selectedColor": "",
+    "backgroundColor": "",
+    "position": "bottom",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/Index/index",
+        "text": "扫码",
+        "iconPath": "images/sm.png",
+        "selectedIconPath": "images/sms.png"
+      },
+      {
+        "pagePath": "pages/Shop/index",
+        "text": "铭迈商城",
+        "iconPath": "images/sc.png",
+        "selectedIconPath": "images/scs.png"
+      },
+      {
+        "pagePath": "pages/User/index",
+        "text": "我的",
+        "iconPath": "images/ur.png",
+        "selectedIconPath": "images/grs.png"
+      }
+    ]
+  }
+  
+    
+}

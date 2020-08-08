@@ -1,0 +1,37 @@
+<windowHeader></windowHeader>
+<van-icon class="backbtn" name="arrow-left" size="50rpx" custom-style=" position: absolute;top: 50rpx;left:30rpx;color:white" bind:click="back"/>
+<view class="cartsItems">
+<view class="item" wx:for="{{cartsList}}" wx:key="index">
+<view class="itemup">
+<view class="select">
+ <van-checkbox data-goodid="{{item.goodid}}" value="{{ shopcheckedList[index].status }}" bind:change="selectshop" ></van-checkbox>
+</view>
+<view class="img">
+<image src="{{item.shopimg}}"></image>
+</view>
+<view class="name">
+{{item.shopname}}
+</view>
+</view>
+<view class="itemdown">
+<view></view>
+<view>
+<view style="color:red">￥{{item.shopprice}}</view>
+<view><van-stepper value="{{ item.shopcount }}" integer data-goodid="{{item.goodid}}" bind:change="ChangeCount"/></view>
+</view>
+</view>
+</view>
+<view class="cartsList"></view>
+</view>
+<van-submit-bar
+  price="{{ totalPrice }}"
+  button-text="结算"
+  bind:submit="payMoney"
+  tip="{{ true }}"
+>
+  <van-tag type="primary">
+ <van-checkbox value="{{ checked }}" bind:change="selectAll">全选</van-checkbox>
+  </van-tag>
+  
+</van-submit-bar>
+

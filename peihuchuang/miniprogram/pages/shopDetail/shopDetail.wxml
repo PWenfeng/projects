@@ -1,0 +1,55 @@
+<view class="detailPage">
+<windowHeader></windowHeader>
+<van-icon class="backbtn" name="arrow-left" size="50rpx" custom-style=" position: absolute;top: 50rpx;left:30rpx;color:white" bind:click="back"/>
+
+<view class="img">
+<image src="{{shopDetail.goods_big_logo}}" ></image>
+</view>
+
+<view class="content">
+<view class="shopPrice"> ￥ {{shopDetail.goods_price}}</view>
+<view class="shopTitle">{{shopDetail.goods_name}}</view>
+<view class="share">分享有赏，可得10积分奖励</view>
+</view>
+
+<view class="choise">
+<van-cell title="请选择" bind:click="openChoise"  />
+<van-action-sheet bind:close="onClose" show="{{ show }}" title="请选择">
+  <view class="chioseContent">
+    <view class="shopimg">
+    <image src="{{shopDetail.goods_small_logo}}"></image>
+   ￥ {{shopDetail.goods_price}}
+     
+    </view>
+    <view class="shopNumber">
+    购买数量：
+    <view class="a">
+    <van-stepper value="{{ shopCount }}" integer bind:change="onChange"/>
+    </view>
+    </view>
+    <view class="shopBtn">
+    <view bindtap="addCart">加入购物车</view>
+    <view>立即购买</view>
+    </view>
+  </view>
+</van-action-sheet>
+</view>
+
+<view class="detailTitle">商品详情</view>
+
+<view class="detail">
+<rich-text nodes="{{shopDetail.goods_introduce}}"></rich-text>
+</view>
+
+
+<van-goods-action>
+  <van-goods-action-icon icon="phone-o" text="商家" bind:click="onClickPhone" />
+  <van-goods-action-icon icon="cart-o" text="购物车" bind:click="redirectCart" />
+  <van-goods-action-button
+    text="加入购物车"
+    type="warning"
+    bind:click="addCart"
+  />
+  <van-goods-action-button text="立即购买" bind:click="onClickButton" />
+</van-goods-action>
+</view>

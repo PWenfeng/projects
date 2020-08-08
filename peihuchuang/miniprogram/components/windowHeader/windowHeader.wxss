@@ -1,0 +1,9 @@
+.toubu{
+    background: linear-gradient(to left, #76EE00, #00CD66);
+  height: 115rpx;
+  font-size: 33rpx;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}

@@ -1,0 +1,36 @@
+<windowHeader></windowHeader>
+<!-- 搜索框 -->
+<navigator url="/pages/searchPage/searchPage">
+<searchBox></searchBox>
+</navigator>
+<!-- 下拉菜单 -->
+<view class="index_dropdown">
+<van-dropdown-menu>
+  <van-dropdown-item value="{{ value1 }}" options="{{ option1 }}" />
+  <van-dropdown-item value="{{ value2 }}" options="{{ option2 }}" />
+</van-dropdown-menu>
+</view>
+<!-- 动态数据填充 -->
+<view class="topNav">
+<van-grid gutter="{{ 10 }}">
+  <van-grid-item icon="{{item.iconPath}}" text="{{item.text}}" wx:for="{{ navList }}" bind:click="navSearch" data-lx="{{item.text}}" wx:key="index" />
+</van-grid>
+</view>
+<!-- 轮播图 -->
+<swiper class="card-swiper {{DotStyle?'square-dot':'round-dot'}}" indicator-dots="true" circular="true" autoplay="true" interval="5000" duration="500" bindtap="cardSwiper" indicator-color="#8799a3" indicator-active-color="#0081ff">
+  <swiper-item wx:for="{{swiperList}}" wx:key="index" class="{{cardCur==index?'cur':''}}">
+    <view class="swiper-item">
+      <image src="{{item.url}}" mode="aspectFill" wx:if="{{item.type=='image'}}"></image>
+      <video src="{{item.url}}" autoplay loop muted show-play-btn="{{false}}" controls="{{false}}" objectFit="cover" wx:if="{{item.type=='video'}}"></video>
+    </view>
+  </swiper-item>
+</swiper>
+<!-- 商品列表 -->
+<view class="content">
+<view class="item" wx:for="{{shopList}}" wx:key="goods_id" bindtap="findShop" data-gid="{{item.goods_id}}">
+    <image src="{{item.goods_small_logo}}"></image>
+    <view style="color:red;font-size:30rpx">￥{{item.goods_price}}</view>
+    <view class="title">{{item.goods_name}}</view>
+</view>
+</view>
+

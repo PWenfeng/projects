@@ -1,0 +1,100 @@
+.detailPage{
+  height: 2000rpx;
+}
+
+.img{
+  width: 100vw;
+  height: 750rpx;
+  position: relative;
+  top: -23rpx;
+}
+image{
+  width: 100%;
+  height: 100%;
+}
+
+.content{
+  width: 100vw;
+  height: 230rpx;
+  background-color: white;
+}
+.shopPrice{
+  color:red;
+  font-size: 50rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+}
+.choise{
+  margin-top: 20rpx;
+  width: 100vw;
+  height: 50rpx;
+  background-color: white;
+}
+
+.chioseContent{
+  height: 300rpx;
+  position: relative;
+}
+.shopimg{
+  height: 120rpx;
+  color: red;
+}
+.shopimg image{
+  margin-left: 20rpx;
+  height: 150rpx;
+  width: 150rpx;
+}
+.shopNumber{
+  text-indent: 20rpx;
+  margin-top: 40rpx;
+  position: relative;
+}
+.a{
+  position: absolute; right: 20rpx; top: -10rpx;
+}
+.shopBtn{
+  position: absolute;
+  bottom: 0;
+  height: 80rpx;
+  display: flex;
+  width: 100vw;
+}
+.shopBtn view{
+  text-align: center;
+  line-height: 80rpx;
+  font-size: 30rpx;
+  color: white;
+}
+.shopBtn view:nth-child(1){
+  flex: 1;
+  background-color: gold;
+}
+.shopBtn view:nth-child(2){
+  flex: 1;
+  background-color: red;
+}
+.detailTitle{
+  margin-top: 50rpx;
+  height:80rpx;
+  line-height: 80rpx;
+  background-color: white;
+  padding-left: 30rpx;
+}
+.shopTitle{
+  display: -webkit-box;/*将对象作为弹性伸缩盒子模型显示*/
+  overflow: hidden; /* 超出的文本隐藏 */
+  text-overflow: ellipsis;/* 溢出用省略号显示 */
+  word-wrap: break-word;/* 文本高出宽度换行 */
+  white-space: normal !important;/* 溢出不换行 */
+  -webkit-line-clamp: 2;/* 表示显示的行数 */
+  -webkit-box-orient: vertical;/* 从上到下垂直排列子元素 */
+}
+.share{
+  font-size:20rpx;
+  color:red;
+  height: 60rpx;
+  line-height: 60rpx;
+}
+.detail{
+  margin-top: 10rpx;
+}
